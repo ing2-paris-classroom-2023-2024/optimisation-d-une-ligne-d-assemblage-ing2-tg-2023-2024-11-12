@@ -18,6 +18,8 @@ void lire_donnees(char* nom_fichier, int* nb_contraintes, int contraintes[][2]) 
     fclose(fichier);
 }
 
+//test
+
 void affecter_stations(int nb_contraintes, int contraintes[][2], int nb_stations) {
     int station_assignee[MAX_OPERATIONS];
 
