@@ -1,8 +1,14 @@
 
-#include "stdlib.h"
-#include "stdio.h"
+#include "Exclusion.h"
 
-int main() {
-    printf("Test1");
-    return 0;
-}
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX_OPERATIONS 35
+#define MAX_STATIONS 5
+
+
+
+
+
+
