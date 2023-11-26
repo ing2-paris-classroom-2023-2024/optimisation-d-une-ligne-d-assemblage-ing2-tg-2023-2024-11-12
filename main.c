@@ -50,7 +50,7 @@ void affecter_stations(int nb_contraintes, int contraintes[][2], int nb_stations
     }
 }
 
-void void_templs_cycle(char* nom_fichier, int nb_stations) {
+void void_temps_cycle(char* nom_fichier, int nb_stations) {
     FILE *fichier = fopen(nom_fichier, "r");
     if (fichier == NULL) {
         perror("Erreur lors de l'ouverture du fichier");
@@ -79,6 +79,66 @@ void void_templs_cycle(char* nom_fichier, int nb_stations) {
     fclose(fichier);
 }
 
+void void_precedence(char* nom_fichier, int nb_stations) {
+    FILE *fichier = fopen(nom_fichier, "r");
+    if (fichier == NULL) {
+        perror("Erreur lors de l'ouverture du fichier");
+        exit(EXIT_FAILURE);
+    }
+
+    int nb_contraintes;
+    int contraintes[MAX_OPERATIONS][2];
+
+    lire_donnees(nom_fichier, &nb_contraintes, contraintes);
+
+    int station_assignee[MAX_OPERATIONS];
+    int current_station = 1;
+    float current_station_time = 0;
+
+    // Initialiser le tableau d'affectation des stations
+    for (int i = 0; i < MAX_OPERATIONS; i++) {
+        station_assignee[i] = 0;
+    }
+
+    printf("Stations:\n");
+
+    for (int i = 0; i < nb_contraintes; i++) {
+        int operation1 = contraintes[i][0];
+        int operation2 = contraintes[i][1];
+
+        if (station_assignee[operation1 - 1] == 0 && station_assignee[operation2 - 1] == 0) {
+            float temps1, temps2;
+
+            // Trouver les temps de cycle des deux opérations
+            FILE *fichier_temps = fopen(nom_fichier, "r");
+            while (fscanf(fichier_temps, "%d %f", &operation1, &temps1) == 2) {
+                if (operation1 == contraintes[i][0]) break;
+            }
+            fclose(fichier_temps);
+
+            fichier_temps = fopen(nom_fichier, "r");
+            while (fscanf(fichier_temps, "%d %f", &operation2, &temps2) == 2) {
+                if (operation2 == contraintes[i][1]) break;
+            }
+            fclose(fichier_temps);
+
+            // Vérifier si le temps de cycle dépasse 10 secondes
+            if (current_station_time + temps1 + temps2 > 10.0) {
+                printf("\n");
+                current_station++;
+                current_station_time = 0;
+            }
+
+            // Affecter les opérations à la station et mettre à jour le temps
+            station_assignee[operation1 - 1] = station_assignee[operation2 - 1] = 1;
+            printf("Station %d: Operation %d (%.2f s) Operation %d (%.2f s) ", current_station, operation1, temps1, operation2, temps2);
+            current_station_time += temps1 + temps2;
+        }
+    }
+
+    fclose(fichier);
+}
+
 int main() {
     char nom_fichier[TAILLE_NOM];
 
@@ -95,7 +155,9 @@ int main() {
 
     affecter_stations(nb_contraintes, contraintes, nb_stations);
 
-    void_templs_cycle(nom_fichier, MAX_STATIONS);
+    void_temps_cycle(nom_fichier, MAX_STATIONS);
+
+    void_precedence(nom_fichier, MAX_STATIONS);
 
 
     return 0;
