@@ -67,6 +67,36 @@
         }
     }
 
+    void void_temps_cycle(char* nom_fichier, int nb_stations) {
+        FILE *fichier = fopen(nom_fichier, "r");
+        if (fichier == NULL) {
+            perror("Erreur lors de l'ouverture du fichier");
+            exit(EXIT_FAILURE);
+        }
+
+        int operation;
+        float temps;
+        int current_station = 1;
+        float current_station_time = 0;
+
+        printf("Stations:\n");
+
+        while (fscanf(fichier, "%d %f", &operation, &temps) == 2) {
+            if (current_station_time + temps <= 10.0) {
+                printf("Station %d: Operation %d (%.2f s) \n", current_station, operation, temps);
+                current_station_time += temps;
+            } else {
+                printf("\n");
+                current_station++;
+                current_station_time = temps;
+                printf("Station %d: Operation %d (%.2f s) \n", current_station, operation, temps);
+            }
+        }
+
+        fclose(fichier);
+    }
+
+
     int main() {
         char nom_fichier[100];
         int nb_contraintes;
@@ -97,6 +127,9 @@
         int nb_stations = 5;
 
         affecter_stations(nb_contraintes, contraintes, nb_stations, max_operations);
+
+        void_temps_cycle(nom_fichier, max_operations);
+
 
         return 0;
     }
