@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "precedences.h"
 
 #define MAX_OPERATIONS 100
 
@@ -35,7 +36,7 @@ void temps_cycle(char* nom_fichier) {
     int nb_contraintes;
     int exclusion[MAX_OPERATIONS][2];
 
-    printf("Stations:\n");
+    printf("\nStations:\n");
 
     // Initialiser les stations
     for (int i = 0; i < MAX_OPERATIONS; i++) {
@@ -132,6 +133,7 @@ int main() {
     }
     fclose(test_fichier);
 
+    precedences();
     exclusion(nom_fichier);
     temps_cycle(nom_fichier);
 
