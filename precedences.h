@@ -66,17 +66,19 @@ void precedenceSort(Graph* graph) {
     for (int i = 0; i < graph->size; ++i) {
         visited[i] = 0;
     }
-
+// Parcourir tous les sommets et effectuer le tri topologique
     for (int i = 0; i < graph->size; ++i) {
         if (!visited[i]) {
             topologicalSortUtil(graph, i, visited, stack, &stackIndex);
         }
     }
 
-    printf("Ordre de precedence : ");
+    // Afficher l'ordre de précédence résultant
+    printf("Ordre de précédence : ");
     for (int i = stackIndex - 1; i >= 0; --i) {
         printf("%d ", stack[i]);
     }
+
 
     free(visited);
     free(stack);
