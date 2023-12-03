@@ -3,17 +3,20 @@
 
 #define MAX_OPERATIONS 100
 
+// Structure pour représenter une opération
 typedef struct {
     int operation;
     float temps;
 } Operation;
 
+// Structure pour représenter une station
 typedef struct {
     Operation operations[MAX_OPERATIONS];
-    int count;
-    float total_time;
+    int count;         // Nombre d'opérations dans la station
+    float total_time;  // Temps total dans la station
 } Station;
 
+// Fonction pour vérifier si deux opérations sont exclues mutuellement
 int estExclue(int operation1, int operation2, int exclusion[][2], int nb_contraintes) {
     for (int i = 0; i < nb_contraintes; i++) {
         if ((operation1 == exclusion[i][0] && operation2 == exclusion[i][1]) ||
@@ -24,6 +27,7 @@ int estExclue(int operation1, int operation2, int exclusion[][2], int nb_contrai
     return 0; // Opérations non exclues
 }
 
+// Fonction pour placer les opérations dans les stations en respectant les contraintes
 void temps_cycle(char* nom_fichier) {
     FILE *fichier = fopen(nom_fichier, "r");
     if (fichier == NULL) {
