@@ -101,9 +101,11 @@ void readEdgesFromFile(Graph* graph, const char* filename) {
     // Fermer le fichier
     fclose(file);
 }
-
+// Fonction principale pour effectuer le tri topologique en utilisant un fichier d'entrée
 void precedences() {
+    // Créer un graphe avec une taille fixe de 36 sommets
     Graph* graph = createGraph(36);
+
 
     // Lire les arêtes depuis le fichier texte
     readEdgesFromFile(graph, "precedences.txt");
