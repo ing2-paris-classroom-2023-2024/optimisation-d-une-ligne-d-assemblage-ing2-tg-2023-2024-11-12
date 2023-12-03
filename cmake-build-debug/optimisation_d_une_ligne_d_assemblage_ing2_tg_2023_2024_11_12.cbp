@@ -8,83 +8,84 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug"/>
+				<Option working_dir="C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12">
-				<Option output="C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug"/>
+				<Option output="C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
-					<Add directory="/mingw/include"/>
+					<Add directory="c:\fichiers instal\clion pycharm github\mingw avec allegro 4\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\fichiers instal\clion pycharm github\mingw avec allegro 4\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\fichiers instal\clion pycharm github\mingw avec allegro 4\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\fichiers instal\clion pycharm github\mingw avec allegro 4\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12"/>
+					<CompileFile command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12/fast">
-				<Option output="C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug"/>
+				<Option output="C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
-					<Add directory="/mingw/include"/>
+					<Add directory="c:\fichiers instal\clion pycharm github\mingw avec allegro 4\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\fichiers instal\clion pycharm github\mingw avec allegro 4\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\fichiers instal\clion pycharm github\mingw avec allegro 4\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\fichiers instal\clion pycharm github\mingw avec allegro 4\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12/fast"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12/fast"/>
+					<CompileFile command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug"/>
+				<Option working_dir="C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug"/>
+				<Option working_dir="C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/FICHIE~1/CLIONP~1/MINGWA~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/main.c">
+		<Unit filename="C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/cycles.h">
 			<Option target="optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12"/>
 		</Unit>
-		<Unit filename="C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/precedences.h">
+		<Unit filename="C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/main.c">
 			<Option target="optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12"/>
 		</Unit>
-		<Unit filename="C:/Users/oscar/CLionProjects/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-11-12/CMakeLists.txt">
+		<Unit filename="C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/precedences.h">
+			<Option target="optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_11_12"/>
+		</Unit>
+		<Unit filename="C:/Cours/ING2/ALGO2/ProjetLigneAssemblage/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
