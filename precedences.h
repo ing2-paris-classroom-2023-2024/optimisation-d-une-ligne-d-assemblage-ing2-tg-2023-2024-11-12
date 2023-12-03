@@ -56,11 +56,13 @@ void topologicalSortUtil(Graph* graph, int v, int visited[], int stack[], int* s
     stack[(*stackIndex)++] = v;
 }
 
+// Fonction principale pour effectuer le tri topologique du graphe
 void precedenceSort(Graph* graph) {
     int* visited = (int*)malloc(graph->size * sizeof(int));
     int* stack = (int*)malloc(graph->size * sizeof(int));
     int stackIndex = 0;
 
+    // Initialiser le tableau de visite à 0 (non visité)
     for (int i = 0; i < graph->size; ++i) {
         visited[i] = 0;
     }
