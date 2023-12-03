@@ -22,6 +22,7 @@ Node* createNode(int value) {
 }
 
 
+// Fonction pour créer un nouveau graphe avec une taille donnée
 Graph* createGraph(int size) {
     Graph* graph = (Graph*)malloc(sizeof(Graph));
     graph->size = size;
