@@ -79,11 +79,12 @@ void precedenceSort(Graph* graph) {
         printf("%d ", stack[i]);
     }
 
-
+// Libérer la mémoire allouée
     free(visited);
     free(stack);
 }
 
+// Fonction pour lire les arêtes du graphe depuis un fichier texte
 void readEdgesFromFile(Graph* graph, const char* filename) {
     FILE* file = fopen(filename, "r");
     if (file == NULL) {
@@ -92,10 +93,12 @@ void readEdgesFromFile(Graph* graph, const char* filename) {
     }
 
     int src, dest;
+    // Lire les paires de sommets à partir du fichier et ajouter des arêtes
     while (fscanf(file, "%d %d", &src, &dest) == 2) {
         addEdge(graph, src, dest);
     }
 
+    // Fermer le fichier
     fclose(file);
 }
 
