@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Définition d'une structure de nœud pour représenter un sommet dans le graphe
 typedef struct Node {
     int value;
     struct Node* next;
 } Node;
 
+// Définition d'une structure de graphe contenant un tableau d'adjacence
 typedef struct {
     Node** array;
     int size;
