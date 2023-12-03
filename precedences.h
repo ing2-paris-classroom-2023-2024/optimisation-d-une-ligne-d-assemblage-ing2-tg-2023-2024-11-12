@@ -13,12 +13,14 @@ typedef struct {
     int size;
 } Graph;
 
+// Fonction pour créer un nouveau nœud avec une valeur donnée
 Node* createNode(int value) {
     Node* newNode = (Node*)malloc(sizeof(Node));
     newNode->value = value;
     newNode->next = NULL;
     return newNode;
 }
+
 
 Graph* createGraph(int size) {
     Graph* graph = (Graph*)malloc(sizeof(Graph));
