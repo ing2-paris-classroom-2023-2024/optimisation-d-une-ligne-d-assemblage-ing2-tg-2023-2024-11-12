@@ -40,6 +40,7 @@ void addEdge(Graph* graph, int src, int dest) {
     graph->array[src] = newNode;
 }
 
+// Fonction utilitaire récursive pour le tri topologique
 void topologicalSortUtil(Graph* graph, int v, int visited[], int stack[], int* stackIndex) {
     visited[v] = 1;
 
