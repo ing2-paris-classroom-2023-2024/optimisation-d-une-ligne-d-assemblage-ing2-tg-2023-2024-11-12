@@ -33,6 +33,7 @@ Graph* createGraph(int size) {
     return graph;
 }
 
+// Fonction pour ajouter une arête dirigée entre deux sommets (src et dest) dans le graphe
 void addEdge(Graph* graph, int src, int dest) {
     Node* newNode = createNode(dest);
     newNode->next = graph->array[src];
