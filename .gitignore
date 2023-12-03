@@ -1,2 +1,5 @@
-cmake-build-debug/
+cmake-build-debug/*.exe
+cmake_build_debug/.cmake/
+cmake_build_debug/Testing/
+cmake_build_debug/CMakeFiles/
 .idea/
