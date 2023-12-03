@@ -121,7 +121,15 @@ void exclusion(char* nom_fichier) {
 }
 
 int main() {
+    const char* pname = "precedences.txt";
+    const char* oname = "operations.txt";
+    const char* pname = "temps_cycle.txt";
+    const char* pname = "exclusion.txt";
+
+
+
     char nom_fichier[100];
+    const char* pname = "precedences.txt";
 
     printf("Veuillez saisir le nom du fichier : ");
     scanf("%s", nom_fichier);
